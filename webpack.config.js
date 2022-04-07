@@ -22,13 +22,25 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif|svg|woff2?|eot|ttf|otf|wav)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif|svg)$/i,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              limit: 999999,
+              name: "../../img/[name].[ext]",
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(woff|woff2?|eot|ttf|otf|wav)$/i,
         use: [
           {
             loader: "url-loader",
             options: {
               limit: 8192,
-              name: "../../img/[name].[ext]",
+              name: "../../fonts/[name].[ext]",
             },
           },
         ],
