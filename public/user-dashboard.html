@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="build/css/application.css" />
+
+    <script defer src="build/js/application.js"></script>
+    <title>داشبورد</title>
+  </head>
+  <body>
+    <div class="root-container">
+      <nav class="dash-nav col-12 d-flex align-items-center p-0">
+        <ul
+          class="text-light text-right col-12 col-md-9 m-0 d-flex flex-row-reverse"
+        >
+          <li><a href="/">رفتن به صفحه ی اصلی سایت</a></li>
+        </ul>
+      </nav>
+      <aside class="side-panel col-3 p-0" dir="ltr">
+        <p class="text-center h4 mt-2">پنل کاربری</p>
+        <ul class="text-right py-2 px-0 col-12 m-0">
+          <li class="panel-option-active">
+            <a href="#">داشبورد</a>
+          </li>
+
+          <li><a href="#">پست های من</a></li>
+          <li>
+            <a href="#"><i class="fa fa-down"></i>تنظیمات پروفایل</a>
+          </li>
+          <li><a href="#">نظرات من</a></li>
+          <li><a href="#" id="dash-messages">پیام های دریافتی</a></li>
+          <li class="text-danger">
+            <a href="#">خروج <i class="fa fa-sign-out"></i></a>
+          </li>
+        </ul>
+      </aside>
+
+      <div class="profile col-9 text-right">
+        <div class="d-flex flex-row-reverse">
+          <div class="profile-avatar ml-3">
+            <img src="./img/man-29.png" alt="" />
+          </div>
+          <div
+            class="d-flex flex-column align-items-end justify-content-center"
+          >
+            <p class="h5 font-weight-bold">@Arsalan_Mirian</p>
+            <p class="text-muted">amirarsalanfarahanian@gmail.com</p>
+          </div>
+        </div>
+        <div class="text-right mt-2" dir="rtl">
+          <div>
+            <span
+              ><i class="fa fa-newspaper ml-2 text-primary"></i>تعداد پست ها :
+            </span>
+            <span class="font-weight-bold">12</span>
+          </div>
+          <div>
+            <span
+              ><i class="fa fa-comment ml-2 text-info"></i>تعداد کامنت ها :
+            </span>
+            <span class="font-weight-bold">45</span>
+          </div>
+        </div>
+        <a href="#" class="btn btn-green btn-md mt-4"
+          >ایجاد پست <i class="fas fa-pen ml-2"></i
+        ></a>
+
+        <div class="latest-posts mt-4" dir="rtl">
+          <p class="h4">آخرین پست ها</p>
+          <a>
+            <div class="round12">
+              <p class="h5">طریقت مردان خدا</p>
+              <span class="text-muted">4 مرداد 1401</span>
+            </div></a
+          >
+          <a>
+            <div class="round12">
+              <p class="h5">طریقت مردان خدا</p>
+              <span class="text-muted">4 مرداد 1401</span>
+            </div></a
+          >
+          <a>
+            <div class="round12">
+              <p class="h5">طرز پخت همبرگر گوشت گاو با سس بنیر</p>
+              <span class="text-muted">4 مرداد 1401</span>
+            </div></a
+          >
+        </div>
+      </div>
+      <!-- / div.profile -->
+    </div>
+  </body>
+</html>
