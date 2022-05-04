@@ -25,9 +25,7 @@ mongoose
     console.log(err);
     app.listen(PORT, () => {
       app.use((req, res) => {
-        res.send(
-          '<p class="alert aler-danger h3 text-center">خطا در برقراری اتصال به پایگاه داده</p>'
-        );
+        res.render("errors/databasedown");
       });
     });
   });
