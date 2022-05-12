@@ -10,3 +10,8 @@ import "../css/all.min.css";
 import "../css/fontawesome.min.css";
 
 import "../css/style.css";
+
+import "./listeners";
+window.addEventListener("DOMContentLoaded", () => {
+  console.log("Dom Loaded");
+});
