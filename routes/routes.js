@@ -9,6 +9,6 @@ module.exports = () => {
   //auth
   router.get("/login", conAuth.get_login);
   router.get("/signup", conAuth.get_signup);
-
+  router.post("/signup", conAuth.post_signup);
   return router;
 };
